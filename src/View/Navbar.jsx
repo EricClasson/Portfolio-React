@@ -1,7 +1,7 @@
 import "../components/Navbar/navbar.scss";
 
 import Darkmode from "../components/Navbar/darkmode/Darkmode";
-import Navbtns from "../components/Navbar/NAV/navbtn";
+import Navbtns from "../components/Navbar/NAV/Navbtn";
 import Pictureofme from "../components/Navbar/pictureofme-jsx/Pictureofme";
 import Hamburgermenu from "../components/Navbar/Hamburgermenu/hamburgermenu";
 
