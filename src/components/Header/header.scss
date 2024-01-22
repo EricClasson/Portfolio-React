@@ -1,0 +1,71 @@
+.header-container {
+  height: 50rem;
+  position: relative;
+  bottom: 6rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.61),
+      rgba(35, 34, 34, 0.333)
+    ),
+    url(../../assets/japan.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+.frontinfo {
+  position: absolute;
+  top: 20rem;
+  left: 5rem;
+  margin-right: 5rem;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.frontinfo > h1 {
+  font-size: 4rem;
+  color: #f8faf8;
+}
+
+.frontinfo > h2 {
+  font-size: 2.5rem;
+  color: #598058;
+}
+
+.frontinfo > h2 > span {
+  color: #a8dadc;
+}
+
+.frontinfo > p {
+  font-size: 1.5rem;
+  color: #457b9d;
+  font-weight: 700;
+}
+.frontinfo-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  color: black;
+}
+.front-info-btn {
+  background-color: #598058;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 600px) {
+  .frontinfo > h1 {
+    font-size: 2rem;
+  }
+
+  .frontinfo > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .Work-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

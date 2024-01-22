@@ -1,0 +1,82 @@
+.aboutme-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 7rem;
+  margin-bottom: 5rem;
+}
+.aboutme-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.aboutme-container > h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.textaboutme-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  border: none;
+  border-radius: 5rem;
+  max-width: 50rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2rem;
+}
+
+.textaboutme-container > h3 {
+  font-size: 2rem;
+}
+
+.aboutme-text-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.aboutme-text-content > img {
+  aspect-ratio: 1/1;
+  min-width: 5rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.skills-container {
+  --min: 25rem;
+  --gap: 2rem;
+  display: grid;
+  grid-gap: var(--gap);
+  /* min() with 100% prevents overflow
+  in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.skillsbyme-container {
+  border: none;
+  border-radius: 5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2rem;
+}
+
+.skills-content {
+  --min: 25rem;
+  --gap: 1rem;
+
+  display: grid;
+  grid-gap: var(--gap);
+  /* min() with 100% prevents overflow
+  in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+@media (max-width: 600px) {
+  .aboutme-text-content {
+    display: flex;
+    flex-direction: column;
+  }
+}

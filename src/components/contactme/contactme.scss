@@ -1,0 +1,68 @@
+.contactme-container {
+  background-color: #ffe5ec;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.contactme-container > h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.contactform-container {
+  --min: 25rem;
+  --gap: 2rem;
+
+  display: grid;
+  grid-gap: var(--gap);
+  /* min() with 100% prevents overflow
+  in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+label {
+  font-size: 1.5rem;
+}
+.contactform-left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contactform-content {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 25rem;
+  font-size: 2rem;
+  font-style: inherit;
+  line-height: 4rem;
+}
+
+input,
+textarea {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.contactform-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contactform-Btn-content {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5rem;
+}
+
+.btn-contactform {
+  width: 10rem;
+  font-size: 1.5rem;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
