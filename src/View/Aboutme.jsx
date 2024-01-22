@@ -6,6 +6,7 @@ import Textaboutme from "../components/Aboutme/textaboutme/Textaboutme";
 
 //About me page - Parent
 
+// Variabel för de skills jag kan jag använder
 const skills = [
   "Javascript",
   "HTML5",
@@ -16,9 +17,11 @@ const skills = [
   "GIT",
   "GITHUB",
 ];
+// Variabel för de uppcommning skills jag ska lära mig inom kort
 
 const upcomming = ["Typscript", "UX and Grafical design", "Csharp"];
 
+// Variabel för de toolbox jag använder
 const toolbox = [
   "Slack",
   "VScode",
@@ -37,23 +40,23 @@ const Aboutme = () => {
         <div className="skills-container">
           <div className="skillsbyme-container">
             <h2>Proficiencies and knowledge</h2>
-            {skills.map((i) => (
-              <Skillsbyme skills={i} />
+            {skills.map((i, index) => (
+              <Skillsbyme skills={i} key={index} /> // Map genom variabeln och propsar ut skillsbyme.jsx.
             ))}
           </div>
           <div className="skillsbyme-container">
             <h2>Proficiencies Upcomming</h2>
             <div className="skills-content">
-              {upcomming.map((it) => (
-                <Upcomming Upcomming={it} />
+              {upcomming.map((it, index) => (
+                <Upcomming Upcomming={it} key={index} /> // Map genom variabeln och propsar ut upcomming.jsx.
               ))}
             </div>
           </div>
           <div className="skillsbyme-container">
             <h2>Toolbox</h2>
             <div className="skills-content">
-              {toolbox.map((its) => (
-                <Toolbox toolbox={its} />
+              {toolbox.map((its, index) => (
+                <Toolbox toolbox={its} key={index} /> // Map genom variabeln och propsar ut toobox.jsx.
               ))}
             </div>
           </div>

@@ -40,7 +40,8 @@ a {
 .btns-work-container {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .btn-work {
@@ -53,4 +54,24 @@ a {
 .btn-work:nth-child(2) {
   background-color: white;
   color: black;
+}
+
+.work-writtenwith-content {
+  display: flex;
+  flex-direction: row;
+
+  gap: 3rem;
+}
+.work-writtenwith-content > h3 {
+  font-size: 3rem;
+}
+.work-writtenwith-content > h3:nth-child(1) {
+  color: #f7df1e;
+}
+
+.work-writtenwith-content > h3:nth-child(2) {
+  color: #ff0000;
+}
+.work-writtenwith-content > h3:nth-child(3) {
+  color: #0000ff;
 }

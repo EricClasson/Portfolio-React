@@ -5,6 +5,8 @@ const Frontinfo = () => {
   return (
     <div className="frontinfo">
       <h1>HI, Im Eric</h1>
+
+      {/* "text " propsar till Typewrite.jsx och används då till functionen currenttext */}
       <h2>
         Front
         <Typewrite text="-End Developer." delay={100} />

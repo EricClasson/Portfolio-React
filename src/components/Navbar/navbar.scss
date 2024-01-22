@@ -33,6 +33,10 @@
 }
 
 .btn-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   font-size: 1.5rem;
@@ -66,18 +70,13 @@
   right: 0.1px;
   padding: 1rem;
   width: 16rem;
-  background-color: #598058;
+  border-radius: 2rem;
+  background-color: var(--background);
 }
 
 .btn-toggle {
   border: none;
   background-color: transparent;
-}
-
-.hambmenux {
-  position: absolute;
-  top: 1px;
-  right: 5px;
 }
 
 .btns-toggle {
