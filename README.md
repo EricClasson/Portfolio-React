@@ -1,6 +1,6 @@
 # - Eric Classon Portfolio
 
-![Design preview for the Portfolio](./design/desktop-preview.jpg)
+![Design preview for the Portfolio](./src/assets/65ae26a5797bf572d3375377.jpg)
 
 ## Table of contents
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoPersonSharp } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
+import { IoIosContacts } from "react-icons/io";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 const Navbtns = () => {
   return (
@@ -14,7 +14,7 @@ const Navbtns = () => {
       </div>
       <div>
         <button className="btn btn-nav contact">
-          <FaLinkedin />
+          <IoIosContacts />
           <Link to="/Contact me">Contact me </Link>
           {/* onclick länk till contact me sidan */}
         </button>

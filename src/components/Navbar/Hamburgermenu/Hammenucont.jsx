@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoPersonSharp } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
+import { IoIosContacts } from "react-icons/io";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 import { FaHome } from "react-icons/fa";
 
@@ -29,7 +29,7 @@ const Hammenucont = ({ setToggle }) => {
         onClick={() => setToggle(false)}
         className="btn btn-nav btns-toggle "
       >
-        <FaLinkedin />
+        <IoIosContacts />
         <Link to="/Contact me">Contact me </Link>
         {/* Props settoggle från parent, denna onclick gör så att när man klickat på en länk så stängs hamburgermenu diven */}
       </button>
