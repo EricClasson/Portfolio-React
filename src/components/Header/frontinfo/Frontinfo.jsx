@@ -1,4 +1,4 @@
-import Typewrite from "./typewrite";
+import Typewrite from "./Typewrite";
 import { Link } from "react-router-dom";
 
 const Frontinfo = () => {
