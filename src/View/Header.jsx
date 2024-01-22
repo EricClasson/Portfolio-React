@@ -1,4 +1,4 @@
-import "../components/header/header.scss";
+import "../components/Header/header.scss";
 
 import Frontinfo from "../components/Header/frontinfo/Frontinfo";
 
