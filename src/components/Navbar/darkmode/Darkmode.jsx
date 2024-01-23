@@ -1,23 +1,33 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  toggleTheme,
+  selectDarkModeEnabled,
+} from "../../../redux/theme/themeSlice.js";
 
-// function som gör att det ändras tema/färg när jag klickar på knappen.
+// // function som gör att det ändras tema/färg när jag klickar på knappen.
 const Darkmode = () => {
-  const [darkmode, setDarkmode] = useState(false);
-  const color = darkmode ? "light" : "dark"; // kollar om darkmode är light så byts det till dark, och då visverse
+  // get theme from store
+  const theme = useSelector(selectDarkModeEnabled);
+  // initialize dispatch variable
+  const dispatch = useDispatch();
 
   const changecolor = () => {
-    setDarkmode(!darkmode);
+    dispatch(toggleTheme());
+  };
+
+  useEffect(() => {
     document.documentElement.setAttribute(
       "data-theme",
-      darkmode ? "dark" : "light"
+      theme ? "dark" : "light"
     );
-  };
+  }, [theme]);
 
   return (
     <div onClick={() => changecolor()} className="halfmoon-container">
       {/* när man klickar så används changecolor functionen  */}
-      {darkmode && <i class="fa-solid fa-toggle-on "></i>}
-      {!darkmode && <i class="fa-solid fa-toggle-off"></i>}
+      {theme && <i class="fa-solid fa-toggle-on "></i>}
+      {!theme && <i class="fa-solid fa-toggle-off"></i>}
     </div>
   );
 };

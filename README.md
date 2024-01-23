@@ -13,8 +13,7 @@
 
 ### Links
 
-- Solution URL: (https://ericclasson.github.io/Tip-Calculator/)
-- Live Site URL: (https://ericclasson.github.io/Tip-Calculator/)
+- Live Site URL: ([Portfolio](https://portfolio-eric-classon-azure.vercel.app/))
 
 ## My process
 
