@@ -21,7 +21,7 @@ const Apifetchcomponents = () => {
     <div className="Apifetch-container">
       {data.map((repo) => (
         <article key={repo.id} className="api-content">
-          <a href={repo.html_url} className="btn btn-api">
+          <a href={repo.html_url} target="_blank" className="btn btn-api">
             <h3>{repo.name}</h3>
           </a>
 

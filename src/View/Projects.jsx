@@ -39,7 +39,7 @@ const Projects = () => {
   ];
   return (
     <div className="Work-main">
-      <h2>High lighted projects..</h2>
+      <h2>Highlighted projects..</h2>
 
       <div className="work-content">
         {/* Propsar och mapar genom arrayen så det skapas en ny div och skriv dess innehåll skrivs ut */}
