@@ -66,6 +66,8 @@ h6 {
   --primary: #8350b9;
   --secondary: #5c244f;
   --accent-text: ##a8dadc;
+  --boxshadow: rgba(73, 73, 75, 0.2) 0px 7px 29px 0px;
+  --2apicolor: #e0e1dd;
 }
 :root[data-theme="dark"] {
   --text: #f3edf8;
@@ -73,6 +75,8 @@ h6 {
   --primary: #7946af;
   --secondary: #598058;
   --accent-text: ##a8dadc;
+  --boxshadow: rgba(229, 229, 233, 0.2) 0px 7px 29px 0px;
+  --2apicolor: #0f4c5c;
 }
 
 :root {

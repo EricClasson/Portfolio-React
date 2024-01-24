@@ -8,9 +8,9 @@
 
 .socialmedia-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 2rem;
   margin-top: 0.5rem;
 }
 
@@ -26,7 +26,7 @@ ul {
   background-color: var(--accent-text);
   color: var(--accent-text);
   padding-inline: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--boxshadow);
 
   &:hover {
     transform: scale(1.2);
@@ -55,5 +55,13 @@ ul {
     transform: scale(1.2);
     transition: color ease 0.5s, ease 0.5s;
     color: rgb(186, 212, 133);
+  }
+}
+
+@media (max-width: 500px) {
+  .socialmedia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

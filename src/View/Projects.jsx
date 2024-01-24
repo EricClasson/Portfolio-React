@@ -4,6 +4,7 @@ import memorycard from "../assets/memory.png";
 import { DiJavascript } from "react-icons/di";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoHtml5 } from "react-icons/io5";
+import Apifetchcomponents from "../components/Work-repo/API-fetch/Apifetchcomponents";
 
 //Prev Work page - Parent
 const Projects = () => {
@@ -38,7 +39,7 @@ const Projects = () => {
   ];
   return (
     <div className="Work-main">
-      <h2>Projects</h2>
+      <h2>High lighted projects..</h2>
 
       <div className="work-content">
         {/* Propsar och mapar genom arrayen så det skapas en ny div och skriv dess innehåll skrivs ut */}
@@ -53,6 +54,17 @@ const Projects = () => {
             key={index}
           />
         ))}
+      </div>
+      <div className="Listofrepo-api-container">
+        <h2>All my repositories on github</h2>
+        <Apifetchcomponents />
+        <a
+          href="https://github.com/EricClasson"
+          target="_blank"
+          className="btn btn-github"
+        >
+          Link to repo
+        </a>
       </div>
     </div>
   );

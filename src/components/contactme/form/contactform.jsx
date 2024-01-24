@@ -14,8 +14,8 @@ const Fromcontactme = () => {
   }
 
   return (
-    <section className="contactform-container">
-      <form onSubmit={formupdate}>
+    <section>
+      <form className="contactform-container" onSubmit={formupdate}>
         <div className="contactform-left-container">
           <div className="contactform-content">
             <label htmlFor="">Name</label>
@@ -34,7 +34,7 @@ const Fromcontactme = () => {
               name="text"
               id=""
               cols="30"
-              rows="10"
+              rows="8"
               placeholder="Write your message here"
               required
             ></textarea>

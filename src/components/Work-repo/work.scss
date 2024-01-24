@@ -47,7 +47,7 @@ a {
 .btn-work {
   max-width: 10rem;
   border: 1px solid white;
-  box-shadow: rgba(211, 211, 218, 0.2) 0px 7px 29px 0px;
+  box-shadow: var(--boxshadow);
   padding-block: 0.25rem;
 }
 
@@ -74,4 +74,83 @@ a {
 }
 .work-writtenwith-content > h3:nth-child(3) {
   color: #0000ff;
+}
+.Listofrepo-api-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem;
+}
+.Apifetch-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.api-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+  gap: 1rem;
+  box-shadow: var(--boxshadow);
+  background-color: var(--2apicolor);
+  padding-block: 5rem;
+  border-radius: 1rem;
+}
+.btn-api {
+  width: 70%;
+  text-decoration: underline;
+  transition: all ease 2s;
+}
+
+.btn-api:hover {
+  animation: animation 1.2s 3 linear;
+}
+@keyframes animation {
+  50% {
+    color: rgb(136, 120, 120);
+  }
+  100% {
+    color: #f00;
+  }
+}
+
+.btn-github {
+  text-align: center;
+  width: 20rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  box-shadow: var(--boxshadow);
+  background-color: var(--2apicolor);
+  padding-block: 0.25rem;
+  transition: ease 2s;
+  cursor: pointer;
+}
+
+.btn-github:hover {
+  animation: animation 1s 3 linear;
+  transform: scale(1.2);
+}
+@keyframes animation {
+  50% {
+    color: rgb(136, 120, 120);
+  }
+  100% {
+    color: #f00;
+  }
+}
+
+@media (max-width: 900px) {
+  .Apifetch-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Apifetch-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
