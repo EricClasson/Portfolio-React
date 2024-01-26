@@ -19,8 +19,17 @@ const skills = [
 ];
 // Variabel för de uppcommning skills jag ska lära mig inom kort
 
-const upcomming = ["Typscript", "UX and Grafical design", "Csharp"];
-
+const upcomming = [
+  "Typscript",
+  "UX and Grafical design",
+  "Csharp",
+  "NodeJs",
+  "Express",
+  "JWT",
+  "Socket",
+  "MongoDB",
+];
+("");
 // Variabel för de toolbox jag använder
 const toolbox = [
   "Slack",

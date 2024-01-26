@@ -13,7 +13,6 @@ const Apifetchcomponents = () => {
       // Hanterar svaret från servern genom att omvandla det till JSON-format
       .then((data) => {
         setData(data); // Uppdaterar komponentens state med den hämtade datan
-        console.log(data); //loggar egenskaper
       });
   }, []); // Tom array innebär att useEffect endast körs vid komponentens första rendering
 

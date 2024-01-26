@@ -85,7 +85,7 @@ a {
 }
 .Apifetch-container {
   display: grid;
-  grid-template-columns: repeat(10, 35%);
+  grid-template-columns: repeat(12, 35%);
   max-width: 70rem;
   height: 30rem;
   padding: 5rem;
@@ -160,9 +160,3 @@ a {
     padding: 2rem;
   }
 }
-
-// @media (max-width: 600px) {
-//   .Apifetch-container {
-//     grid-template-rows: repeat(1, 1fr);
-//   }
-// }

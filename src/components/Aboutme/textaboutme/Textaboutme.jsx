@@ -1,4 +1,4 @@
-import mepicture from "../../../assets/eric.jpeg";
+import mepicture from "../../../assets/eric.avif";
 
 // Text about me
 const Textaboutme = () => {

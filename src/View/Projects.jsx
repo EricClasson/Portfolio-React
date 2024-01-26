@@ -1,10 +1,11 @@
 import "../components/Work-repo/work.scss";
 import Workcomponents from "../components/Work-repo/workchild/Workcomponets";
-import memorycard from "../assets/memory.png";
+import memorycard from "../assets/memory.avif";
 import { DiJavascript } from "react-icons/di";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoHtml5 } from "react-icons/io5";
 import Apifetchcomponents from "../components/Work-repo/API-fetch/Apifetchcomponents";
+import yearspic from "../assets/screenshotyears.avif";
 
 //Prev Work page - Parent
 const Projects = () => {
@@ -20,7 +21,7 @@ const Projects = () => {
       liveLink: "https://ericclasson.github.io/Tip-Calculator/",
     },
     {
-      imgSrc: "https://api.pikwy.com/web/65a6a552450c755c893b7aa7.jpg",
+      imgSrc: yearspic,
       title: "Age calculator app solution",
       text: "This is a solution to the Age calculator app challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
       Writtenwith: [<DiJavascript />, <FaCss3Alt />, <IoLogoHtml5 />],

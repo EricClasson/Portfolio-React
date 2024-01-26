@@ -10,11 +10,9 @@ const Hamburgermenu = () => {
   return (
     <div className="hamburger-nav">
       <button onClick={() => setToggle(!toggle)} className="btn-toggle">
-        {!toggle && (
-          <CiMenuFries className="hamburgermenu hidden fa-solid fa-bars" />
-        )}
+        {!toggle && <CiMenuFries className="hamburgermenu hidden " />}
 
-        {toggle && <RxCross1 className="fa-solid fa-x hidden hambmenux" />}
+        {toggle && <RxCross1 className=" hidden hambmenux" />}
       </button>
       {toggle && <Hammenucont toggle={toggle} setToggle={setToggle} />}
     </div>

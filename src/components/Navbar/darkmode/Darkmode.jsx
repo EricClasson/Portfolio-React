@@ -4,7 +4,8 @@ import {
   toggleTheme,
   selectDarkModeEnabled,
 } from "../../../redux/theme/themeSlice.js";
-
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 const Darkmode = () => {
   // get theme from store
   const theme = useSelector(selectDarkModeEnabled);
@@ -24,10 +25,10 @@ const Darkmode = () => {
   }, [theme]);
 
   return (
-    <div onClick={() => changecolor()} className="halfmoon-container">
+    <div onClick={() => changecolor()}>
       {/* när man klickar så används changecolor functionen  */}
-      {!theme && <i class="fa-solid fa-toggle-on "></i>}
-      {theme && <i class="fa-solid fa-toggle-off"></i>}
+      {!theme && <MdLightMode className="halfmoon-btn" />}
+      {theme && <MdDarkMode className="halfmoon-btn" />}
     </div>
   );
 };
