@@ -89,6 +89,9 @@ h6 {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --btn-borderradius: 0.8rem;
+  --box-borderradius: 2rem;
 }
 
 body {
@@ -99,13 +102,13 @@ body {
 
 .btn {
   padding-inline: 15px;
-  border-radius: 2rem;
+  border-radius: var(--btn-borderradius);
   border: none;
   cursor: pointer;
 
   &:hover {
     transform: scale(1.2);
-    transition: color ease 0.5s, ease 0.5s;
+    transition: color ease 0.5s, ease-in-out 0.5s;
     color: rgb(172, 155, 21);
   }
 }

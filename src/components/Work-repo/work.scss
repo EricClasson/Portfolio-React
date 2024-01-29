@@ -21,7 +21,7 @@
   in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
   padding-inline: 1rem;
-  border-radius: 10px;
+  border-radius: var(--box-borderradius);
 }
 .Work-container {
   display: flex;
@@ -85,8 +85,8 @@ a {
 }
 .Apifetch-container {
   display: grid;
-  grid-template-columns: repeat(12, 35%);
-  max-width: 70rem;
+  grid-template-columns: repeat(12, 60%);
+  max-width: 70%;
   height: 30rem;
   padding: 5rem;
   overflow-x: auto;
@@ -103,11 +103,15 @@ a {
   box-shadow: var(--boxshadow);
   background-color: var(--2apicolor);
   padding-block: 5rem;
-  border-radius: 1rem;
+  border-radius: var(--box-borderradius);
   scroll-snap-align: start;
   scroll-snap-stop: always;
   text-align: center;
   transition: all ease 0.2s;
+}
+
+.api-content > a {
+  font-size: 1.5rem;
 }
 
 .btn-api {
@@ -156,7 +160,7 @@ a {
 
 @media (max-width: 900px) {
   .Apifetch-container {
-    grid-template-columns: repeat(1, 1fr);
+    max-width: 40%;
     padding: 2rem;
   }
 }

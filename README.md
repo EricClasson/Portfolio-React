@@ -6,7 +6,7 @@
 
 - [Overview](#overview)
   - [Links](#links)
-- [ Getting Started](# Getting-Started)
+- [Getting Started](# Getting-Started)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -45,6 +45,7 @@ _Below is an example of how you can instruct your audience on installing and set
    npm install
    ```
 3. Run project
+
    ```Npm run dev
 
    ```
