@@ -6,6 +6,7 @@
 
 - [Overview](#overview)
   - [Links](#links)
+- [ Getting Started](# Getting-Started)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -14,6 +15,39 @@
 ### Links
 
 - Live Site URL: ([Portfolio](https://portfolio-eric-classon-azure.vercel.app/))
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run project
+   ```Npm run dev
+
+   ```
 
 ## My process
 
@@ -43,3 +77,7 @@ The project was a bit of recap of what i have been learnd the last few months wi
 
 - [MDN](https://developer.mozilla.org/en-US/) - This helped me for fixing the issues i stumbled on. I really liked this pattern and will use it going forward.
 - [W3 Schools](https://www.w3schools.com/) - This helped me for fixing the issues i stumbled on. I really liked this pattern and will use it going forward.
+
+```
+
+```
