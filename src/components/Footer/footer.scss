@@ -27,10 +27,10 @@ ul {
   color: var(--accent-text);
   padding-inline: 3rem;
   box-shadow: var(--boxshadow);
-
+  transition: color ease 0.5s, ease 0.5s;
   &:hover {
     transform: scale(1.2);
-    transition: color ease 0.5s, ease 0.5s;
+
     color: var(--color2-yellow);
   }
 }
@@ -53,10 +53,10 @@ ul {
 .socialmedialinks {
   font-size: 3rem;
   cursor: pointer;
-
+  transition: color ease 0.5s, ease 0.5s;
   &:hover {
     transform: scale(1.2);
-    transition: color ease 0.5s, ease 0.5s;
+
     color: var(--color2-yellow);
   }
 }

@@ -16,12 +16,12 @@
   height: 4rem;
   border-radius: 50%;
   background-size: cover;
-
+  transition: ease-in-out 0.5s;
   cursor: pointer;
 
   &:hover {
     transform: scale(1.2);
-    transition: ease 0.2s;
+
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
@@ -86,10 +86,10 @@
   cursor: pointer;
   font-size: 2.5rem;
   color: var(--color2-yellow);
+  transition: ease-in-out 0.5s;
 
   &:hover {
     transform: scale(1.5);
-    transition: ease 0.5s;
   }
 }
 @media (max-width: 720px) {

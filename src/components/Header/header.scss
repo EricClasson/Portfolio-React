@@ -19,7 +19,7 @@
 
 .frontinfo > h2 {
   font-size: 6rem;
-  color: #598058;
+  color: var(--color2-green);
 }
 
 .frontinfo > h2 > span {
@@ -39,7 +39,7 @@
 }
 .front-info-btn {
   display: flex;
-  background-color: #598058;
+  background-color: var(--color2-green);
   align-items: center;
 
   &:hover {

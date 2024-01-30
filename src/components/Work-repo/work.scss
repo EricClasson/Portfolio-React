@@ -56,6 +56,7 @@ a {
   border: 1px solid white;
   box-shadow: var(--boxshadow);
   padding-block: 0.25rem;
+  background-color: var(--color2-green);
 }
 
 .btn-work:nth-child(2) {
@@ -136,7 +137,7 @@ a {
 .githubstats:before {
   content: "";
   position: absolute;
-  background-color: #4d9078;
+  background-color: var(--color2-green);
 
   width: 100%;
   height: 100%;
