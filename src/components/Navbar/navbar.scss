@@ -8,14 +8,15 @@
   position: sticky;
   background-color: transparent;
   top: 0;
-  z-index: 1;
-  backdrop-filter: blur(15px);
+  z-index: 3;
+  backdrop-filter: blur(30px);
 }
 .pictureofme {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   background-size: cover;
+
   cursor: pointer;
 
   &:hover {
@@ -41,6 +42,7 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   font-size: 1.5rem;
   font-weight: 400;
+  border-radius: var(--btn-borderradius);
   color: rgb(120, 118, 118);
 
   &:hover {
@@ -80,29 +82,23 @@
   font-size: 2rem;
 }
 
-.btns-toggle {
-  padding-inline: 10px;
-  color: white;
-  background-color: #2f3e46;
-}
-
 .halfmoon-btn {
   cursor: pointer;
-  font-size: 2rem;
-  color: var(--halfmoon);
+  font-size: 2.5rem;
+  color: var(--color2-yellow);
 
   &:hover {
     transform: scale(1.5);
     transition: ease 0.5s;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .navbar-Btn-container {
     display: none;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 720px) {
   .hidden {
     display: none;
   }

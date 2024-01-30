@@ -1,5 +1,5 @@
 .contactme-container {
-  background-color: #ffe5ec;
+  background-color: var(--contact-bg);
   color: black;
   display: flex;
   flex-direction: column;
@@ -14,8 +14,8 @@
   gap: 2rem;
 }
 .contactme-container > h2 {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: var(--fontsizeh2main);
+  font-weight: var(--fontwightmai);
 }
 
 label {
@@ -38,6 +38,12 @@ input {
   line-height: 4rem;
 }
 
+input:focus {
+  background-color: var(--2apicolor);
+  color: var(--text);
+  box-shadow: 0 0 0 2px #ffb703;
+}
+
 input,
 textarea {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -45,6 +51,13 @@ textarea {
   border-radius: 10px;
   resize: none;
   max-width: 25rem;
+  outline: none;
+}
+
+textarea:focus {
+  background-color: var(--2apicolor);
+  color: var(--text);
+  box-shadow: 0 0 0 2px #ffb703;
 }
 
 .contactform-right-container {

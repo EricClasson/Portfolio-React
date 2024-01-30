@@ -6,8 +6,8 @@
 }
 
 .Work-main > h2 {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: var(--fontsizeh2main);
+  font-weight: var(--fontwightmai);
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ a {
   color: inherit;
 }
 .Work-container > img {
-  border-radius: 2rem;
+  border-radius: var(--box-borderradius);
   aspect-ratio: 16/9;
 }
 
@@ -80,60 +80,130 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 5rem;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.Listofrepo-api-container > h2 {
+  font-size: var(--fontsizeh2main);
+  font-weight: var(--fontwightmai);
 }
 .Apifetch-container {
   display: grid;
-  grid-template-columns: repeat(12, 60%);
-  max-width: 70%;
-  height: 30rem;
-  padding: 5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .api-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-items: center;
   color: var(--text);
-  gap: 1rem;
+  gap: 4rem;
   box-shadow: var(--boxshadow);
   background-color: var(--2apicolor);
-  padding-block: 5rem;
   border-radius: var(--box-borderradius);
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  text-align: center;
+  padding-block: 5rem;
+  z-index: 1;
+
   transition: all ease 0.2s;
 }
 
 .api-content > a {
   font-size: 1.5rem;
 }
+.githubstats {
+  position: relative;
+  display: grid;
 
-.btn-api {
-  width: 70%;
+  color: var(--text);
+  gap: 4rem;
+  box-shadow: var(--boxshadow);
+  border-radius: var(--box-borderradius);
+  padding-block: 5rem;
+  z-index: 1;
+
+  transition: all ease 0.2s;
+  background-color: var(--color2-yellow);
+  overflow: hidden;
+  color: var(--background);
+}
+.githubstats:before {
+  content: "";
+  position: absolute;
+  background-color: #4d9078;
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s ease-in-out;
+}
+
+.githubstats:hover::before {
+  transform: translateY(0%);
+}
+
+.githubstats:hover {
+  color: var(--text);
+}
+
+.githubstats > ul > li {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li > h3 {
   text-decoration: underline;
   text-underline-offset: 8px;
-  transition: all ease 2s;
 }
 
-.btn-api:hover {
-  animation: animation 1.2s 3 linear;
+li > p {
+  font-weight: 900;
 }
-@keyframes animation {
-  50% {
-    color: rgb(136, 120, 120);
-  }
-  100% {
-    color: #f00;
-  }
+
+// .btn-api > h3 {
+// }
+
+.btn-api {
+  position: relative;
+  transition: all ease 2s;
+  width: fit-content;
 }
+
+.btn-api::before {
+  content: "";
+  position: absolute;
+  background-color: #e9c46a;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale ease 0.5s;
+}
+
+.btn-api:hover::before {
+  scale: 1 1;
+  transform-origin: right;
+}
+
+// .btn-api:hover {
+//   animation: animation 1.2s 3 linear;
+// }
+// @keyframes animation {
+//   50% {
+//     color: rgb(136, 120, 120);
+//   }
+//   100% {
+//     color: #f00;
+//   }
+// }
 
 .btn-github {
+  font-size: 1.5rem;
   text-align: center;
   width: 20rem;
   border: 1px solid white;
@@ -160,7 +230,12 @@ a {
 
 @media (max-width: 900px) {
   .Apifetch-container {
-    max-width: 40%;
-    padding: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Apifetch-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

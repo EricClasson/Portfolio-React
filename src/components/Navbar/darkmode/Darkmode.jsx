@@ -20,7 +20,7 @@ const Darkmode = () => {
   useEffect(() => {
     document.documentElement.setAttribute(
       "data-theme",
-      theme ? "dark" : "light"
+      theme ? "light" : "dark"
     );
   }, [theme]);
 

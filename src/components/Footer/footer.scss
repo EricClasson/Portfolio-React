@@ -31,13 +31,16 @@ ul {
   &:hover {
     transform: scale(1.2);
     transition: color ease 0.5s, ease 0.5s;
-    color: rgb(186, 212, 133);
+    color: var(--color2-yellow);
   }
 }
 
 .footer-note {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 10px;
@@ -54,8 +57,15 @@ ul {
   &:hover {
     transform: scale(1.2);
     transition: color ease 0.5s, ease 0.5s;
-    color: rgb(186, 212, 133);
+    color: var(--color2-yellow);
   }
+}
+
+.footer-copyright > h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 @media (max-width: 500px) {

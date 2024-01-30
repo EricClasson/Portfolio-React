@@ -23,7 +23,7 @@
 
 .frontinfo > h1 {
   font-size: 4rem;
-  color: #f8faf8;
+  color: var(--heroh1);
 }
 
 .frontinfo > h2 {
@@ -47,7 +47,9 @@
   color: black;
 }
 .front-info-btn {
+  display: flex;
   background-color: #598058;
+  align-items: center;
 
   &:hover {
     transform: scale(1.2);

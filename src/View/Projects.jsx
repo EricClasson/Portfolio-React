@@ -56,15 +56,15 @@ const Projects = () => {
           />
         ))}
       </div>
-      <div className="Listofrepo-api-container">
-        <h2>All my repositories on github</h2>
+      <div className="Listofrepo-api-container text-center">
+        <h2>More repositorys on github</h2>
         <Apifetchcomponents />
         <a
           href="https://github.com/EricClasson"
           target="_blank"
           className="btn btn-github"
         >
-          Link to repo
+          Link to Github
         </a>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { RxCross1 } from "react-icons/rx";
 // Sida som är hammburger menu parent
 const Hamburgermenu = () => {
   // usestate som gör att när man tooglar hamburgermenu när man klickar på den.
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <div className="hamburger-nav">

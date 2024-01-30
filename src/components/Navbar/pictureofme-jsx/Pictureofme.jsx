@@ -1,4 +1,4 @@
-import picture from "../../../assets/me2.avif";
+import picture from "../../../assets/eric.avif";
 import { Link } from "react-router-dom";
 
 const Pictureofme = () => {
