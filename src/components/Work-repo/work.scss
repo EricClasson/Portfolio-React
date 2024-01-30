@@ -3,11 +3,13 @@
   flex-direction: column;
   align-items: center;
   gap: 7rem;
+  margin-top: 5rem;
 }
 
 .Work-main > h2 {
   font-size: var(--fontsizeh2main);
-  font-weight: var(--fontwightmai);
+  font-weight: var(--fontwightmain);
+  color: var(--color2-yellow);
   text-align: center;
 }
 
@@ -36,6 +38,10 @@ a {
 .Work-container > img {
   border-radius: var(--box-borderradius);
   aspect-ratio: 16/9;
+}
+
+.Work-container:hover {
+  transform: translateZ(0.04px);
 }
 
 .btns-work-container {
@@ -86,7 +92,8 @@ a {
 
 .Listofrepo-api-container > h2 {
   font-size: var(--fontsizeh2main);
-  font-weight: var(--fontwightmai);
+  font-weight: var(--fontwightmain);
+  color: var(--color2-yellow);
 }
 .Apifetch-container {
   display: grid;
@@ -114,7 +121,6 @@ a {
 .githubstats {
   position: relative;
   display: grid;
-
   color: var(--text);
   gap: 4rem;
   box-shadow: var(--boxshadow);
@@ -189,18 +195,6 @@ li > p {
   scale: 1 1;
   transform-origin: right;
 }
-
-// .btn-api:hover {
-//   animation: animation 1.2s 3 linear;
-// }
-// @keyframes animation {
-//   50% {
-//     color: rgb(136, 120, 120);
-//   }
-//   100% {
-//     color: #f00;
-//   }
-// }
 
 .btn-github {
   font-size: 1.5rem;

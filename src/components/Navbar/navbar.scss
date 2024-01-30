@@ -43,7 +43,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   border-radius: var(--btn-borderradius);
-  color: rgb(120, 118, 118);
+  color: var(--text);
 
   &:hover {
     border-bottom: 2px solid rgb(194, 147, 147);

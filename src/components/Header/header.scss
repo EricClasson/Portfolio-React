@@ -1,20 +1,11 @@
 .header-container {
   height: 50rem;
   position: relative;
-  bottom: 6rem;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.61),
-      rgba(35, 34, 34, 0.333)
-    ),
-    url(../../assets/japan.avif);
-  background-size: cover;
-  background-position: center;
 }
 
 .frontinfo {
   position: absolute;
-  top: 20rem;
+  top: 10rem;
   left: 5rem;
   margin-right: 5rem;
   background-color: transparent;
@@ -22,12 +13,12 @@
 }
 
 .frontinfo > h1 {
-  font-size: 4rem;
-  color: var(--heroh1);
+  font-size: 10rem;
+  color: var(--color2-yellow);
 }
 
 .frontinfo > h2 {
-  font-size: 2.5rem;
+  font-size: 6rem;
   color: #598058;
 }
 
@@ -36,7 +27,7 @@
 }
 
 .frontinfo > p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #457b9d;
   font-weight: 700;
 }
@@ -58,9 +49,12 @@
 
 @media (max-width: 600px) {
   .frontinfo > h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
+  .frontinfo > h2 {
+    font-size: 2rem;
+  }
   .frontinfo > p {
     font-size: 1rem;
   }

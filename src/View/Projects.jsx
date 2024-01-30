@@ -40,7 +40,7 @@ const Projects = () => {
   ];
   return (
     <div className="Work-main">
-      <h2>Highlighted projects..</h2>
+      <h2>Highlighted projects!</h2>
 
       <div className="work-content">
         {/* Propsar och mapar genom arrayen så det skapas en ny div och skriv dess innehåll skrivs ut */}
@@ -57,7 +57,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="Listofrepo-api-container text-center">
-        <h2>More repositorys on github</h2>
+        <h2>More Github</h2>
         <Apifetchcomponents />
         <a
           href="https://github.com/EricClasson"
