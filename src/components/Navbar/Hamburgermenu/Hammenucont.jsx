@@ -8,36 +8,24 @@ import { FaHome } from "react-icons/fa";
 const Hammenucont = ({ setToggle }) => {
   return (
     <div className="hamburger-content">
-      <button
-        onClick={() => setToggle(false)}
-        className="btn btn-nav btns-toggle"
-      >
+      <button onClick={() => setToggle(false)} className="btn-nav-toggle">
         <FaHome />
         <Link to="/">Home </Link>
         {/* Props settoggle från parent, denna onclick gör så att när man klickat på en länk så stängs hamburgermenu diven */}
       </button>
-      <button
-        onClick={() => setToggle(false)}
-        className="btn btn-nav btns-toggle "
-      >
+      <button onClick={() => setToggle(false)} className="btn-nav-toggle">
         <IoPersonSharp />
         <Link to="/About me">About me </Link>
         {/* Props settoggle från parent, denna onclick gör så att när man klickat på en länk så stängs hamburgermenu diven */}
       </button>
 
-      <button
-        onClick={() => setToggle(false)}
-        className="btn btn-nav btns-toggle "
-      >
+      <button onClick={() => setToggle(false)} className="btn-nav-toggle">
         <IoIosContacts />
         <Link to="/Contact me">Contact me </Link>
         {/* Props settoggle från parent, denna onclick gör så att när man klickat på en länk så stängs hamburgermenu diven */}
       </button>
 
-      <button
-        onClick={() => setToggle(false)}
-        className="btn btn-nav btns-toggle"
-      >
+      <button onClick={() => setToggle(false)} className="btn-nav-toggle">
         <LiaProjectDiagramSolid />
         <Link to="/projects">Projects </Link>
         {/* Props settoggle från parent, denna onclick gör så att när man klickat på en länk så stängs hamburgermenu diven */}

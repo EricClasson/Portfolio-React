@@ -66,20 +66,36 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 1rem;
   top: 3rem;
   right: 0.1px;
   padding: 1rem;
   width: 16rem;
   border-radius: 2rem;
-  background-color: var(--background);
+
+  background-color: var(--hamburgercont);
+}
+.btn-nav-toggle {
+  display: flex;
+  flex-direction: row;
+  padding-block: 0.2rem;
+  align-items: center;
+  gap: 2rem;
+  width: 70%;
+  color: var(--text);
+  background-color: var(--2apicolor);
+  border-radius: var(--btn-borderradius);
+  box-shadow: var(--color2-yellow);
+  border: none;
 }
 
 .btn-toggle {
   border: none;
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 2.5rem;
+
+  color: var(--text);
 }
 
 .halfmoon-btn {
