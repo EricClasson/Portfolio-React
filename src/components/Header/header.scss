@@ -5,7 +5,7 @@
 
 .frontinfo {
   position: absolute;
-  top: 5rem;
+  top: 10rem;
   left: 5rem;
   margin-right: 5rem;
   background-color: transparent;
@@ -46,8 +46,20 @@
     transform: scale(1.2);
   }
 }
+@media (max-width: 1005px) {
+  .frontinfo > h1 {
+    font-size: 6rem;
+  }
 
-@media (max-width: 600px) {
+  .frontinfo > h2 {
+    font-size: 3rem;
+  }
+  .frontinfo > p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
   .frontinfo > h1 {
     font-size: 4rem;
   }
