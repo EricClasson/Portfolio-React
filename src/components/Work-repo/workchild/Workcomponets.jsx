@@ -8,7 +8,9 @@ const Workcomponents = ({
 }) => {
   return (
     <div className="Work-container">
-      <img src={imgSrc} alt="picturework" />
+      <div className="work-imgbox">
+        <img src={imgSrc} alt="picturework" />
+      </div>
       <h2>{title}</h2>
       <p>{text}</p>
       <div className="work-writtenwith-content">
