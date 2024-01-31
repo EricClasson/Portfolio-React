@@ -20,7 +20,7 @@ const skills = [
 // Variabel för de uppcommning skills jag ska lära mig inom kort
 
 const upcomming = [
-  "Typscript",
+  "Typescript",
   "UX and Grafical design",
   "Csharp",
   "NodeJs",
