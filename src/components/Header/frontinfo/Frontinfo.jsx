@@ -20,9 +20,9 @@ const Frontinfo = () => {
           Projects{" "}
         </Link>
 
-        <button className="btn front-info-btn">
-          <Link to="/About me">About me </Link>
-        </button>
+        <Link to="/About me" className="btn front-info-btn">
+          About me{" "}
+        </Link>
       </div>
     </div>
   );
