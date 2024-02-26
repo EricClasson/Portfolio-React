@@ -7,6 +7,7 @@ const Frontinfo = () => {
       <h1>HI, Im Eric</h1>
 
       {/* "text " propsar till Typewrite.jsx och används då till functionen currenttext */}
+      <div className="undertext"></div>
       <h2>
         Front
         <Typewrite text="-End Developer." delay={100} />
@@ -20,8 +21,8 @@ const Frontinfo = () => {
           Projects{" "}
         </Link>
 
-        <Link to="/About me" className="btn front-info-btn">
-          About me{" "}
+        <Link to="/About me" className="btn front-info-btn btn-left">
+          More{" "}
         </Link>
       </div>
     </div>

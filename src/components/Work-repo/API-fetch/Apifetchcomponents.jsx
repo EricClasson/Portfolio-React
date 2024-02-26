@@ -35,7 +35,7 @@ const Apifetchcomponents = () => {
       <div className="githubstats">
         <ul>
           <li>
-            <h3>Public Repositorys</h3>
+            <h3>Public Repos</h3>
             <p>{profils.public_repos}</p>
           </li>
           <li>
