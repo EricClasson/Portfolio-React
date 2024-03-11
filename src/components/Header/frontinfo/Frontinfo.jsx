@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Frontinfo = () => {
   return (
     <div className="frontinfo">
-      <h1>HI, Im Eric</h1>
+      <h1>HI, I´m Eric</h1>
 
       {/* "text " propsar till Typewrite.jsx och används då till functionen currenttext */}
       <div className="undertext"></div>

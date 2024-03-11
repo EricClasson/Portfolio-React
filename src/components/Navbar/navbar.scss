@@ -55,10 +55,7 @@
 .hamburgernav-container {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-}
-
-.hamburger-nav {
+  gap: 1rem;
 }
 
 .hamburger-content {
@@ -66,9 +63,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
-  top: -1rem;
+  top: -6rem;
   right: 0.1px;
   padding: 1rem;
   width: 100%;
@@ -76,10 +72,21 @@
   z-index: -1;
   background-color: var(--background-toogle-nav);
 }
+
+.hamburger-menu {
+  list-style: none;
+  position: absolute;
+
+  inset: 0;
+  font-size: 2rem;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+
 .btn-nav-toggle {
-  display: flex;
-  flex-direction: row;
-  padding-block: 0.2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 2rem;
   font-size: 2rem;
