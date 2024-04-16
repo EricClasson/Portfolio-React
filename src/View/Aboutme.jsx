@@ -39,11 +39,9 @@ const Aboutme = () => {
             <div className="skills_content">
               {" "}
               <ul>
-                <li>Slack</li>
-                <li>VScode</li>
-                <li>Trello</li>
-                <li>Figma</li>
-                <li>Adobe Photoshop</li>
+                <li>Typescript</li>
+                <li>Csharp</li>
+                <li>Java</li>
               </ul>
             </div>
           </div>
@@ -53,9 +51,11 @@ const Aboutme = () => {
             <div className="skills_content">
               {" "}
               <ul>
-                <li>Typescript</li>
-                <li>Csharp</li>
-                <li>Java</li>
+                <li>Slack</li>
+                <li>VScode</li>
+                <li>Trello</li>
+                <li>Figma</li>
+                <li>Adobe Photoshop</li>
               </ul>
             </div>
           </div>
